@@ -1,0 +1,88 @@
+<h1>Ruby on Rails Project</h1>
+
+<p>
+Concept Health Technologies is a fast-growing company which is developing new generation of digital drugs therapies 
+that will change the way physicians treat illnesses in the future. We are driven by a desire to turn 
+futuristic healthcare concepts into a reality today. 
+</p>
+
+<p>
+This is the first step in our hiring process: You will find two projects below, please select one and implement it 
+with best of your capabilities. Please add in the README of the project "why" you selected the project.
+</p>
+
+<h3>Project 1: Timeclock</h3>
+
+<p>
+This project is to create a realtime time tracking application using Rails. 
+
+The worker should be able to go to the home page click on "Register" link to open up registeration form to create profile. 
+Worker profile has name and date of birth as fields. Completing the registration form will provide the worker with a id. 
+
+The home page should also have link to the Timeclock which when clicked takes the worker to a view which will display a 
+form field for ID, "Punch In" button which when pressed will start the timer and display a 
+"Punch Out" button to stop the timer. The worker will also be able to see the total time that has been logged. 
+
+The homepage should have a link for manager view which when clicked will open it up (no id or authentication required) 
+and will display all the workers in a list. The list item will show worker name, date of birth, id, total time, 
+and the worker status (active or inactive) active green background, inactive has red background. 
+
+Please don't hesitate to ask questions, to clarify the requirements.
+
+Please use github as source code repo and to build the project, so that history of commits can be viewed. 
+Add a README to describe how to install the application, and any comments on future updates. Bonus host the application 
+online and add the link to it in the README.
+</p>
+
+<h3>Project 2: Variance</h3>
+
+<p>
+You may choose to do this project instead of the Timeclock one.
+
+This project involves creating a Rails based API, the API exposes following endpoints
+
+Schema of dataset 
+{
+  id: Integer,
+  temperature: Float (minimum value can be -273.15)
+  recorded_at: Datetime (UTC)
+}
+
+GET /datasets
+List of all datasets
+
+GET /datasets/:id
+Respond with a dataset as json
+
+POST /datasets
+Create a dataset in the database and respond with dataset created as json
+
+PUT /datasets/:id
+Update a dataset in the database and respond with updated dataset
+
+DELETE /datasets/:id
+Delete a dataset and respond with deleted dataset
+
+Use HTTP status codes to communicate the status of all operatures, e.g. 200 for success and 400 for failure, 404 for not 
+found etc.
+
+GET /variance
+Respond with variance of temperature over last minute
+Reference on how to calculate variance:
+https://www.calculatorsoup.com/calculators/statistics/variance-calculator.php
+
+Assume the frequency of data collection is 10 records / second
+
+The client of the API, should use a token for verification in the header, for this project you can seed the 
+database with tokens using a token model.
+
+Please don't hesitate to ask questions, to clarify the requirements.
+
+Please use github as source code repo and to build the project, so that history of commits can be viewed. 
+Add a README to describe how to install the application, and any comments on future updates. Bonus, host the application 
+online and add the link to it in the README.
+</p> 
+
+
+Once you are done please send a message on upwork or ahsan.naqvi@concepthealth.co.uk
+									 
