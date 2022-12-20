@@ -7,7 +7,7 @@ futuristic healthcare concepts into a reality today.
 </p>
 
 <p>
-This is the first step in our hiring process: You will find two projects below, please select one and implement it 
+This is the second step in our hiring process: You will find a projects below, please implement it 
 with best of your capabilities. Please add in the README of the project "why" you selected the project.
 </p>
 
@@ -44,82 +44,6 @@ Add a README to describe how to install the application, and any comments on fut
 online and add the link to it in the README.
 </p>
 
-<h3>Project 2: Variance</h3>
-
-<p>
-You may choose to do this project instead of the Timeclock one.
-
-<br>
-<br>
-This project involves creating a Rails based API, the API exposes following endpoints
-
-<br>
-<br>
-Schema of dataset 
-<br>
-{
-<br>
-  id: Integer,
-<br>
-  temperature: Float (minimum value can be -273.15)
-<br>
-  recorded_at: Datetime (UTC)
-<br>
-}
-
-<br>
-<br>
-GET /datasets
-<br>
-List of all datasets
-
-<br>
-<br>
-GET /datasets/:id
-<br>
-Respond with a dataset as json
-
-<br>
-<br>
-POST /datasets
-<br>
-Create a dataset in the database and respond with dataset created as json
-
-<br>
-<br>
-PUT /datasets/:id
-<br>
-Update a dataset in the database and respond with updated dataset
-
-<br>
-<br>
-DELETE /datasets/:id
-<br>
-Delete a dataset and respond with deleted dataset
-
-<br>
-<br>
-Use HTTP status codes to communicate the status of all operatures, e.g. 200 for success and 400 for failure, 404 for not 
-found etc.
-
-<br>
-<br>
-GET /variance
-<br>
-Respond with variance of temperature over last minute
-Reference on how to calculate variance:
-https://www.calculatorsoup.com/calculators/statistics/variance-calculator.php
-
-<br>
-<br>
-Assume the frequency of data collection is 10 records / second
-
-<br>
-<br>
-The client of the API, should use a token for verification in the header, for this project you can seed the 
-database with tokens using a token model.
-
-<br>
 <br>
 Please don't hesitate to ask questions, to clarify the requirements.
 
